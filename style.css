@@ -20,72 +20,99 @@
     text-decoration: none;
   }
   
-  /* Navbar styles */
-  #navbar {
-    background: rgb(233, 96, 5);
-    color: rgb(255, 255, 255);
-    position: fixed;
-    top: 0;
-    height: 60px;
-    line-height: 60px;
-    width: 100vw;
-    z-index: 10;
-  }
-  
-  /* Container for navbar contents */
-  .nav-wrapper {
-    margin: auto;
-    text-align: center;
-    width: 70%;
-  }
-  
-  /* Logo styles */
-  .logo {
-    float: left;
-    margin-left: 28px;
-    font-size: 1.5em;
-    height: 60px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-  }
-  .logo img{
-    margin-top: 10px;
-    margin-right: 20px;
-  }
-  /* Unordered list for navbar items */
-  #navbar ul {
-    display: inline-block;
-    list-style: none;
-    margin-top: -2px;
-    text-align: right;
-  }
-  
-  /* List items in the navbar */
-  #navbar li {
-    display: inline-block;
-  }
-  
-  /* Styles for navbar links */
-  #navbar li a {
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 0.7em;
-    height: 50px;
-    letter-spacing: 1px;
-    margin: 0 20px;
-    padding: 0 4px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  /* Hover effect for navbar links */
-  #navbar li a:hover {
-    border-bottom: 1px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-  }
+  /* Default styles for the navbar */
+#navbar {
+  background: rgb(233, 96, 5);
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100vw;
+  z-index: 10;
+}
 
+/* Container for navbar contents */
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+/* Logo styles */
+.logo {
+  float: left;
+  margin-left: 28px;
+  font-size: 1.5em;
+  height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+}
+.logo img {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* Unordered list for navbar items */
+#navbar ul {
+  display: inline-block;
+  list-style: none;
+  margin-top: -2px;
+  text-align: right;
+}
+
+/* List items in the navbar */
+#navbar li {
+  display: inline-block;
+}
+
+/* Styles for navbar links */
+#navbar li a {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 0.7em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Hover effect for navbar links */
+#navbar li a:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+  .logo {
+    float: none;
+    text-align: center;
+  }
+  .logo img {
+    margin: 10px auto;
+    display: block;
+  }
+  #navbar ul {
+    display: block;
+    text-align: center;
+  }
+  #navbar li {
+    display: none;
+    margin: 10px 0;
+  }
+  #navbar li a {
+    display: inline-block;
+    margin: 0;
+  }
+}
   /*-----------------------------------*\ 
   #REUSED STYLE
 \*-----------------------------------*/
