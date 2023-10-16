@@ -1,0 +1,371 @@
+/* Reset default styles for all elements */
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set global styles for the entire page */
+  body {
+    background: rgb(250, 250, 250);
+    font-family: Lato, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Define global styles for hyperlinks */
+  a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  /* Navbar styles */
+  #navbar {
+    background: rgb(233, 96, 5);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+  }
+  
+  /* Container for navbar contents */
+  .nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+  
+  /* Logo styles */
+  .logo {
+    float: left;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+  }
+  .logo img{
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  /* Unordered list for navbar items */
+  #navbar ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: -2px;
+    text-align: right;
+  }
+  
+  /* List items in the navbar */
+  #navbar li {
+    display: inline-block;
+  }
+  
+  /* Styles for navbar links */
+  #navbar li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 0.7em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  /* Hover effect for navbar links */
+  #navbar li a:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+  }
+
+  /*-----------------------------------*\ 
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.btn {
+    height: 55px;
+    padding: 0 25px;
+    color: rgba(0, 0, 0, 0.904);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  
+  .btn-primary { background: rgb(233, 96, 5); }
+  
+  .btn-secondary { background: rgb(238, 232, 229); }
+  
+  .btn-icon {
+    display:     flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .section-title {
+    max-width: 420px;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .section-text {
+    max-width: 320px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+  /*-----------------------------------*\ 
+  #HOME
+\*-----------------------------------*/
+
+.home {
+  background-image: url(assets/images/bk_bg.jpg);
+  background-size: cover;
+  background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 150px 30px 60px;
+    height: 100vh;
+  }
+  
+  .home-left { text-align: center; }
+  
+  .home-subtext {
+    background: rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 30px;
+  }
+  
+  .main-heading {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .home-text {
+    color: rgba(255, 255, 255);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+  
+  .home .btn-group {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+
+.about {
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .about-right{
+    padding: 80px auto;
+  }
+  .about-right .section-title { margin-bottom: 30px; }
+  
+  .about-right p {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(233, 96, 5);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: rgb(141, 59, 4);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  /*-----------------------------------*\ 
+  #PRODUCT SECTION
+\*-----------------------------------*/
+
+.product { padding: 100px 30px; }
+
+.product .section-title { margin-bottom: 30px; }
+
+.product .section-text { margin-bottom: 60px; }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.product-card .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-badge {
+  position: absolute;
+  top:  15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+.product-card .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.product-card .product-name {
+  color: rgba(0, 0, 0, 0.904);
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.product-card .product-price {
+  background: rgba(233, 96, 5, 0.836);
+  height: 60px;
+  width:  60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.904);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product-card .small {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.product-card .product-text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
